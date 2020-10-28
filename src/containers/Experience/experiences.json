@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Mars 2019 à aujourd'hui - Mistertemp'",
+    "stack": [
+      {
+        "id": "nodejs",
+        "title": "NodeJS (KoaJS)"
+      },
+      {
+        "id": "psql",
+        "title": "PostgreSQL"
+      },
+      {
+        "id": "es",
+        "title": "ElasticSearch"
+      },
+      {
+        "id": "aws",
+        "title": "Amazon Web Services"
+      },
+      {
+        "id": "k8s",
+        "title": "Kubernetes"
+      },
+      {
+        "id": "docker",
+        "title": "Docker"
+      }
+    ],
+    "description": ""
+  },
+  {
+    "title": "I use these tools:",
+    "skills": [
+      {
+        "id": "git",
+        "title": "Git"
+      },
+      {
+        "id": "commits",
+        "title": "Conventional commits"
+      },
+      {
+        "id": "scrum",
+        "title": "SCRUM"
+      },
+      {
+        "id": "cypress",
+        "title": "Cypress"
+      }
+    ]
+  },
+  {
+    "title": "I also have experience with:",
+    "skills": [
+      {
+        "id": "vue",
+        "title": "VueJS"
+      },
+      {
+        "id": "php",
+        "title": "PHP 7"
+      },
+      {
+        "id": "symfony",
+        "title": "Symfony"
+      },
+      {
+        "id": "orm",
+        "title": "ORMs (Doctrine, Sequelize)"
+      },
+      {
+        "id": "webpack",
+        "title": "Webpack"
+      },
+      {
+        "id": "aws",
+        "title": "Amazon Web Services"
+      },
+      {
+        "id": "k8s",
+        "title": "Kubernetes"
+      }
+    ]
+  }
+]
