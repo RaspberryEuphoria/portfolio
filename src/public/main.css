@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
+/* Soft reset */
+html,
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h2 {
+  margin-bottom: 1.2rem;
+}
+
+.helptext {
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+h2 {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  width: 42%;
+  margin-bottom: 2.5rem;
+  color: #363c48;
+}
+
+body {
+  background: #363c48;
+  color: #ffffff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+main {
+  display: flex;
+  max-width: 65rem;
+  margin: 5rem auto 0 auto;
+}
+
+nav {
+  padding-top: 3rem;
+  text-transform: uppercase;
+}
+
+nav ul {
+  position: relative;
+}
+
+.active-border {
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 32px;
+  background: #f7616f;
+  transition: top 0.1s ease-out;
+}
+
+nav li {
+  padding-right: 1rem;
+  border-right: 2px solid #212327;
+
+  line-height: 2rem;
+  list-style-type: none;
+  text-align: right;
+}
+
+nav li a {
+  display: block;
+  color: #ffffff;
+}
+
+nav li.active a,
+nav li:hover a {
+  color: #f7616f;
+}
+
+.content {
+  padding: 0 5rem;
+}
+
+.skill-list {
+  margin-bottom: 2.5rem;
+  list-style-type: none;
+}
+
+.skill-list li {
+  position: relative;
+}
+
+.skill-list:not(:last-of-type) li::before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #f7616f;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+}
+
+.skill-list:last-of-type li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.skill-list:last-of-type li:not(:last-of-type)::after {
+  content: ', ';
+}
