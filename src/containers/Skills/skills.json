@@ -1,0 +1,85 @@
+[
+  {
+    "title": "I am currently interested in:",
+    "skills": [
+      {
+        "id": "js",
+        "title": "JavaScript (ES9+)"
+      },
+      {
+        "id": "njs",
+        "title": "NodeJS ❤️"
+      },
+      {
+        "id": "react",
+        "title": "ReactJS ❤️"
+      },
+      {
+        "id": "psql",
+        "title": "PostgreSQL"
+      },
+      {
+        "id": "es",
+        "title": "ElasticSearch"
+      },
+      {
+        "id": "testing",
+        "title": "Unit Testing (Jest)"
+      }
+    ]
+  },
+  {
+    "title": "I use these tools:",
+    "skills": [
+      {
+        "id": "git",
+        "title": "Git"
+      },
+      {
+        "id": "commits",
+        "title": "Conventional commits"
+      },
+      {
+        "id": "scrum",
+        "title": "SCRUM"
+      },
+      {
+        "id": "cypress",
+        "title": "Cypress"
+      }
+    ]
+  },
+  {
+    "title": "I also have experience with:",
+    "skills": [
+      {
+        "id": "vue",
+        "title": "VueJS"
+      },
+      {
+        "id": "php",
+        "title": "PHP 7"
+      },
+      {
+        "id": "symfony",
+        "title": "Symfony"
+      },
+      {
+        "id": "orm",
+        "title": "ORMs (Doctrine, Sequelize)"
+      },
+      {
+        "id": "webpack",
+        "title": "Webpack"
+      },
+      {
+        "id": "aws",
+        "title": "Amazon Web Services"
+      },
+      {
+        "id": "k8s",
+        "title": "Kubernetes"
+      }
+    ]
+  }
+]
