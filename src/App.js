@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+import { getRouteFromUrl, getBorderPosition } from './utils/navigation';
 import ExperienceContainer from './containers/ExperienceContainer';
 import SkillsContainer from './containers/SkillsContainer';
 
@@ -71,18 +73,3 @@ const App = () => {
 };
 
 export default App;
-
-function getRouteFromUrl() {
-  const [, route] = window.location.href.split('#');
-
-  return route || DEFAULT_ROUTE;
-}
-
-function getBorderPosition(activeRoute) {
-  const routeIndex = navigationLinks.findIndex(({ id }) => id === activeRoute);
-
-  const borderHeight = 30;
-  const borderOffset = routeIndex * 2;
-
-  return routeIndex * borderHeight + borderOffset;
-}
