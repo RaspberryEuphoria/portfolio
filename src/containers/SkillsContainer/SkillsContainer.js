@@ -5,14 +5,14 @@ const SkillsContainer = () => {
   return (
     <div>
       {sections.map(({ title, skills }) => (
-        <>
+        <React.Fragment key={title}>
           <h2>{title}</h2>
           <ul className="skill-list">
             {skills.map(({ id, title }) => (
               <li key={id}>{title}</li>
             ))}
           </ul>
-        </>
+        </React.Fragment>
       ))}
       <hr />
       <p>
