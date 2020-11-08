@@ -22,7 +22,7 @@ const SkillsContainer = () => {
       </p>
       <p>
         While coding is my passion, I think being a good developer is more than just being a "
-        <em>code monkey</em>". This is wht being involved in every aspects of the conception and
+        <em>code monkey</em>". This is why being involved in every aspects of the conception and
         design of a product is really important to me.
       </p>
     </div>
