@@ -19,7 +19,7 @@
         "title": "NestJS ❤️"
       },
       {
-        "id": "nest",
+        "id": "typeorm",
         "title": "TypeORM"
       },
       {
@@ -29,10 +29,6 @@
       {
         "id": "es",
         "title": "ElasticSearch"
-      },
-      {
-        "id": "testing",
-        "title": "Unit Testing (Jest)"
       }
     ]
   },
@@ -51,6 +47,10 @@
         "id": "scrum",
         "title": "SCRUM"
       },
+      {
+        "id": "testing",
+        "title": "Testing (unit tests with Jest, functionnal tests with Cypress)"
+      }
     ]
   },
   {
@@ -83,10 +83,6 @@
       {
         "id": "k8s",
         "title": "Kubernetes"
-      },
-      {
-        "id": "cypress",
-        "title": "Cypress"
       }
     ]
   }
