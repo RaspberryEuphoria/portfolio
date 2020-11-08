@@ -2,14 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import { getRouteFromUrl, getBorderPosition } from './utils/navigation';
 import Router, { navigationLinks } from './components/Router';
+import Link from './components/Link';
 
 const DEFAULT_ROUTE = navigationLinks[0].id;
-
-const Link = ({ activeRoute, setActiveRoute, id, title }) => (
-  <li className={id === activeRoute ? 'active' : ''} onClick={() => setActiveRoute(id)}>
-    <a href={`#${id}`}>{title}</a>
-  </li>
-);
 
 const App = () => {
   const [activeRoute, setActiveRoute] = useState(getRouteFromUrl() || DEFAULT_ROUTE);
