@@ -1,7 +1,7 @@
 import React from 'react';
 import sections from './skills.json';
 
-const Skills = () => {
+const SkillsContainer = () => {
   return (
     <div>
       {sections.map(({ title, skills }) => (
@@ -29,4 +29,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsContainer;

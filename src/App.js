@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Experience from './containers/Experience';
-import Skills from './containers/Skills';
+import ExperienceContainer from './containers/ExperienceContainer';
+import SkillsContainer from './containers/SkillsContainer';
 
 const navigationLinks = [
   {
@@ -18,8 +18,8 @@ const navigationLinks = [
 ];
 
 const Routes = {
-  skills: Skills,
-  experience: Experience,
+  skills: SkillsContainer,
+  experience: ExperienceContainer,
   default: () => <div>Erreur 404</div>,
 };
 
