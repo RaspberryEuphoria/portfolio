@@ -1,36 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 import { getRouteFromUrl, getBorderPosition } from './utils/navigation';
-import ExperienceContainer from './containers/ExperienceContainer';
-import SkillsContainer from './containers/SkillsContainer';
-
-const navigationLinks = [
-  {
-    id: 'experience',
-    title: 'experience',
-  },
-  {
-    id: 'skills',
-    title: 'skills',
-  },
-  {
-    id: 'projects',
-    title: 'Projects',
-  },
-];
-
-const Routes = {
-  skills: SkillsContainer,
-  experience: ExperienceContainer,
-  default: () => <div>Erreur 404</div>,
-};
+import Router, { navigationLinks } from './components/Router';
 
 const DEFAULT_ROUTE = navigationLinks[0].id;
-
-const Router = ({ activeRoute }) => {
-  const Route = Routes[activeRoute] || Routes.default;
-  return <Route />;
-};
 
 const Link = ({ activeRoute, setActiveRoute, id, title }) => (
   <li className={id === activeRoute ? 'active' : ''} onClick={() => setActiveRoute(id)}>
@@ -39,11 +12,11 @@ const Link = ({ activeRoute, setActiveRoute, id, title }) => (
 );
 
 const App = () => {
-  const [activeRoute, setActiveRoute] = useState(getRouteFromUrl());
-  const [borderPosition, setBorderPosition] = useState(getBorderPosition(activeRoute));
+  const [activeRoute, setActiveRoute] = useState(getRouteFromUrl() || DEFAULT_ROUTE);
+  const [borderPosition, setBorderPosition] = useState(getBorderPositionFromLinks(activeRoute));
 
   useEffect(() => {
-    setBorderPosition(getBorderPosition(activeRoute));
+    setBorderPosition(getBorderPositionFromLinks(activeRoute));
   }, [activeRoute]);
 
   return (
@@ -73,3 +46,7 @@ const App = () => {
 };
 
 export default App;
+
+function getBorderPositionFromLinks(activeRoute) {
+  return getBorderPosition(navigationLinks, activeRoute);
+}

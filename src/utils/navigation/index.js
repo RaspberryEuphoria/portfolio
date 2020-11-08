@@ -1,10 +1,10 @@
 export function getRouteFromUrl() {
   const [, route] = window.location.href.split('#');
 
-  return route || DEFAULT_ROUTE;
+  return route;
 }
 
-export function getBorderPosition(activeRoute) {
+export function getBorderPosition(navigationLinks, activeRoute) {
   const routeIndex = navigationLinks.findIndex(({ id }) => id === activeRoute);
 
   const borderHeight = 30;
