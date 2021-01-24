@@ -97,16 +97,20 @@ nav li:hover a {
   padding: 0 5rem;
 }
 
+.regular-list,
 .inline-list {
-  margin-bottom: 2.5rem;
+  margin: 1.2rem 0;
+}
+
+.regular-list {
   list-style-type: none;
 }
 
-.inline-list li {
+.regular-list li {
   position: relative;
 }
 
-.inline-list:not(:last-of-type) li::before {
+.regular-list li::before {
   content: '';
   position: absolute;
   width: 7px;
@@ -117,11 +121,11 @@ nav li:hover a {
   transform: translateY(-50%);
 }
 
-.inline-list:last-of-type li {
+.inline-list li {
   display: inline-block;
   margin-right: 5px;
 }
 
-.inline-list:last-of-type li:not(:last-of-type):not(.list-title)::after {
+.inline-list li:not(:last-of-type):not(.list-title)::after {
   content: ', ';
 }
