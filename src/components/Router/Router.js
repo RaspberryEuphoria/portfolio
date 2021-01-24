@@ -5,16 +5,16 @@ import SkillsContainer from '../../containers/SkillsContainer';
 
 export const navigationLinks = [
   {
+    id: 'about',
+    title: 'About',
+  },
+  {
     id: 'experience',
-    title: 'experience',
+    title: 'Experience',
   },
   {
     id: 'skills',
-    title: 'skills',
-  },
-  {
-    id: 'projects',
-    title: 'Projects',
+    title: 'Skills',
   },
 ];
 
