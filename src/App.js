@@ -28,7 +28,7 @@ const App = () => {
             />
           ))}
           <li>
-            <a href="#github">GitHub</a>
+            <a href="https://github.com/RaspberryEuphoria" target="_blank">GitHub</a>
           </li>
         </ul>
       </nav>
