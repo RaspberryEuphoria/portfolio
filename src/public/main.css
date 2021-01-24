@@ -27,6 +27,13 @@ h2 {
   font-style: italic;
 }
 
+h2 span {
+  display: block;
+
+  color: #aaa;
+  font-size: 0.6em;
+}
+
 a {
   text-decoration: none;
 }
@@ -90,16 +97,16 @@ nav li:hover a {
   padding: 0 5rem;
 }
 
-.skill-list {
+.inline-list {
   margin-bottom: 2.5rem;
   list-style-type: none;
 }
 
-.skill-list li {
+.inline-list li {
   position: relative;
 }
 
-.skill-list:not(:last-of-type) li::before {
+.inline-list:not(:last-of-type) li::before {
   content: '';
   position: absolute;
   width: 7px;
@@ -110,11 +117,11 @@ nav li:hover a {
   transform: translateY(-50%);
 }
 
-.skill-list:last-of-type li {
+.inline-list:last-of-type li {
   display: inline-block;
   margin-right: 5px;
 }
 
-.skill-list:last-of-type li:not(:last-of-type)::after {
+.inline-list:last-of-type li:not(:last-of-type)::after {
   content: ', ';
 }

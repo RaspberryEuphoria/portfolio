@@ -7,7 +7,7 @@ const SkillsContainer = () => {
       {sections.map(({ title, skills }) => (
         <React.Fragment key={title}>
           <h2>{title}</h2>
-          <ul className="skill-list">
+          <ul className="inline-list">
             {skills.map(({ id, title }) => (
               <li key={id}>{title}</li>
             ))}
