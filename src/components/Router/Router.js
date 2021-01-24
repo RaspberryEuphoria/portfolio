@@ -2,6 +2,7 @@ import React from 'react';
 
 import AboutContainer from '../../containers/AboutContainer';
 import ExperienceContainer from '../../containers/ExperienceContainer';
+import ResumeContainer from '../../containers/ResumeContainer';
 import SkillsContainer from '../../containers/SkillsContainer';
 
 export const navigationLinks = [
@@ -17,12 +18,17 @@ export const navigationLinks = [
     id: 'skills',
     title: 'Skills',
   },
+  {
+    id: 'resume',
+    title: 'Resume',
+  },
 ];
 
 const Routes = {
   about: AboutContainer,
-  skills: SkillsContainer,
   experience: ExperienceContainer,
+  resume: ResumeContainer,
+  skills: SkillsContainer,
   default: () => <div>Erreur 404</div>,
 };
 
