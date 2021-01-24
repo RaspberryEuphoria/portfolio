@@ -1,47 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import Experience from './containers/Experience';
-import Skills from './containers/Skills';
 
-const navigationLinks = [
-  {
-    id: 'experience',
-    title: 'experience',
-  },
-  {
-    id: 'skills',
-    title: 'skills',
-  },
-  {
-    id: 'projects',
-    title: 'Projects',
-  },
-];
-
-const Routes = {
-  skills: Skills,
-  experience: Experience,
-  default: () => <div>Erreur 404</div>,
-};
+import { getRouteFromUrl, getBorderPosition } from './utils/navigation';
+import Router, { navigationLinks } from './components/Router';
+import Link from './components/Link';
 
 const DEFAULT_ROUTE = navigationLinks[0].id;
 
-const Router = ({ activeRoute }) => {
-  const Route = Routes[activeRoute] || Routes.default;
-  return <Route />;
-};
-
-const Link = ({ activeRoute, setActiveRoute, id, title }) => (
-  <li className={id === activeRoute ? 'active' : ''} onClick={() => setActiveRoute(id)}>
-    <a href={`#${id}`}>{title}</a>
-  </li>
-);
-
 const App = () => {
-  const [activeRoute, setActiveRoute] = useState(getRouteFromUrl());
-  const [borderPosition, setBorderPosition] = useState(getBorderPosition(activeRoute));
+  const [activeRoute, setActiveRoute] = useState(getRouteFromUrl() || DEFAULT_ROUTE);
+  const [borderPosition, setBorderPosition] = useState(getBorderPositionFromLinks(activeRoute));
 
   useEffect(() => {
-    setBorderPosition(getBorderPosition(activeRoute));
+    setBorderPosition(getBorderPositionFromLinks(activeRoute));
   }, [activeRoute]);
 
   return (
@@ -72,17 +42,6 @@ const App = () => {
 
 export default App;
 
-function getRouteFromUrl() {
-  const [, route] = window.location.href.split('#');
-
-  return route || DEFAULT_ROUTE;
-}
-
-function getBorderPosition(activeRoute) {
-  const routeIndex = navigationLinks.findIndex(({ id }) => id === activeRoute);
-
-  const borderHeight = 30;
-  const borderOffset = routeIndex * 2;
-
-  return routeIndex * borderHeight + borderOffset;
+function getBorderPositionFromLinks(activeRoute) {
+  return getBorderPosition(navigationLinks, activeRoute);
 }

@@ -1,18 +1,18 @@
 import React from 'react';
 import sections from './skills.json';
 
-const Skills = () => {
+const SkillsContainer = () => {
   return (
     <div>
       {sections.map(({ title, skills }) => (
-        <>
+        <React.Fragment key={title}>
           <h2>{title}</h2>
           <ul className="skill-list">
             {skills.map(({ id, title }) => (
               <li key={id}>{title}</li>
             ))}
           </ul>
-        </>
+        </React.Fragment>
       ))}
       <hr />
       <p>
@@ -29,4 +29,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsContainer;

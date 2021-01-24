@@ -15,16 +15,20 @@
         "title": "ReactJS ❤️"
       },
       {
+        "id": "nest",
+        "title": "NestJS ❤️"
+      },
+      {
+        "id": "typeorm",
+        "title": "TypeORM"
+      },
+      {
         "id": "psql",
         "title": "PostgreSQL"
       },
       {
         "id": "es",
         "title": "ElasticSearch"
-      },
-      {
-        "id": "testing",
-        "title": "Unit Testing (Jest)"
       }
     ]
   },
@@ -44,8 +48,8 @@
         "title": "SCRUM"
       },
       {
-        "id": "cypress",
-        "title": "Cypress"
+        "id": "testing",
+        "title": "Testing (unit tests with Jest, functionnal tests with Cypress)"
       }
     ]
   },
@@ -66,7 +70,7 @@
       },
       {
         "id": "orm",
-        "title": "ORMs (Doctrine, Sequelize)"
+        "title": "Various ORMs (Doctrine in PHP, Sequelize in NodeJS)"
       },
       {
         "id": "webpack",
