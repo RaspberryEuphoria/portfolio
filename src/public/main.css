@@ -97,6 +97,15 @@ nav li:hover a {
   padding: 0 5rem;
 }
 
+.content a {
+  color: #f7616f;
+}
+
+.content a:hover {
+  background: #f7616f;
+  color: #ffffff;
+}
+
 .regular-list,
 .inline-list {
   margin: 1.2rem 0;
