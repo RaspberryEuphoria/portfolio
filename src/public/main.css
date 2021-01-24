@@ -122,6 +122,6 @@ nav li:hover a {
   margin-right: 5px;
 }
 
-.inline-list:last-of-type li:not(:last-of-type)::after {
+.inline-list:last-of-type li:not(:last-of-type):not(.list-title)::after {
   content: ', ';
 }
