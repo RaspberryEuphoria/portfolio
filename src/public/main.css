@@ -116,7 +116,7 @@ nav li:hover a {
   width: 7px;
   height: 7px;
   background: #f7616f;
-  top: 50%;
+  top: 0.7rem;
   left: -1rem;
   transform: translateY(-50%);
 }

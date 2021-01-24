@@ -1,10 +1,20 @@
 [
   {
-    "title": "Mars 2019 à aujourd'hui - Mistertemp'",
+    "title": "Mistertemp'",
+    "duration": "August 2018 - february 2019",
+    "description": "Full-stack developer on the Mistertemp' platform, a microservices oriented application.",
     "stack": [
       {
+        "id": "jsts",
+        "title": "JavaScript/TypeScript (ES8+)"
+      },
+      {
+        "id": "reactjs",
+        "title": "ReactJS"
+      },
+      {
         "id": "nodejs",
-        "title": "NodeJS (KoaJS)"
+        "title": "NodeJS (KoaJS, NestJS, TypeORM)"
       },
       {
         "id": "psql",
@@ -16,7 +26,7 @@
       },
       {
         "id": "aws",
-        "title": "Amazon Web Services"
+        "title": "AWS"
       },
       {
         "id": "k8s",
@@ -25,62 +35,116 @@
       {
         "id": "docker",
         "title": "Docker"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "title": "I use these tools:",
-    "skills": [
-      {
-        "id": "git",
-        "title": "Git"
       },
       {
-        "id": "commits",
-        "title": "Conventional commits"
+        "id": "git",
+        "title": "Git (with atomic commits and conventional commits)"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "maintenance",
+        "description": "Maintenance and evolution of Mistertemp' services"
+      },
+      {
+        "id": "ops",
+        "description": "Setup of new microservices with AWS and Kubernetes"
+      },
+      {
+        "id": "testing",
+        "description": "Unit testing with Jest, integration testing with Cypress"
       },
       {
         "id": "scrum",
-        "title": "SCRUM"
+        "description": "Worked with SCRUM/Less, learned the role of scrum master"
       },
       {
-        "id": "cypress",
-        "title": "Cypress"
+        "id": "doc",
+        "description": "Setup and upkeep of an internal Confluence"
       }
     ]
   },
   {
-    "title": "I also have experience with:",
-    "skills": [
-      {
-        "id": "vue",
-        "title": "VueJS"
-      },
-      {
-        "id": "php",
-        "title": "PHP 7"
-      },
+    "title": "Yoopies'",
+    "duration": "March 2019 - today",
+    "description": "Full-stack developer on the Yoopies platform.",
+    "stack": [
       {
         "id": "symfony",
-        "title": "Symfony"
+        "title": "Symfony (PHP 7)"
       },
       {
-        "id": "orm",
-        "title": "ORMs (Doctrine, Sequelize)"
+        "id": "vuejs",
+        "title": "VueJS (ES8+)"
+      },
+      {
+        "id": "es",
+        "title": "ElasticSearch"
+      },
+      {
+        "id": "gql",
+        "title": "GraphQL"
+      },
+      {
+        "id": "mariadb",
+        "title": "MariaDB"
+      },
+      {
+        "id": "linux",
+        "title": "Linux"
+      },
+      {
+        "id": "git",
+        "title": "Git"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "maintenance",
+        "description": "Maintenance and evolution of Yoopies services"
+      },
+      {
+        "id": "jsdoc",
+        "description": "Working process improvement with JSDoc"
+      }
+    ]
+  },
+  {
+    "title": "Atypic",
+    "duration": "March 2017 - july 2018",
+    "description": "Web developer as part of a service provicer for Sanofi.",
+    "stack": [
+      {
+        "id": "reactjs",
+        "title": "ReactJS"
       },
       {
         "id": "webpack",
         "title": "Webpack"
       },
       {
-        "id": "aws",
-        "title": "Amazon Web Services"
+        "id": "sp",
+        "title": "Sharepoint"
       },
       {
-        "id": "k8s",
-        "title": "Kubernetes"
+        "id": "php",
+        "title": "PHP 7 (occasionaly)"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "webapp",
+        "description": "Development of web applications for Sanofi's intranet"
+      },
+      {
+        "id": "website",
+        "description": "Development of websites<a href='http://www.codeofethics.sanofi/'>Sanofi Code of Ethics</a> from scratch, <a href='https://www.dermatite-atopique.fr/'>Dermatite Atopique</a> for the back-end and JS modules)"
+      },
+      {
+        "id": "improvements",
+        "description": "Working process improvement with ReactJS"
       }
     ]
   }
 ]
+
