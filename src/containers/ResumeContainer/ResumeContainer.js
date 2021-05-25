@@ -1,7 +1,6 @@
 import React from 'react';
 
-const resumeUrl = require('../../public/resume_thomas_mion.jpg')
-
+const resumeUrl = '...'; // @todo add new resume
 
 const ResumeContainer = () => {
   return <div>
